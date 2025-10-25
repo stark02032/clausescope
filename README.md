@@ -51,6 +51,9 @@ The application should now be open and accessible in your web browser at `http:/
 
 2.  **Highlight a Snippet:** Paste a smaller portion of the contract into the second text area and click the "Highlight Snippet" button to see a version of the text with key entities highlighted.
 
+## deployment on streamlit
+we could even deploy it on streamlit 
+
 ## Deployment on Render
 
 This application is configured for deployment on [Render](https://render.com/).
@@ -68,6 +71,8 @@ This application is configured for deployment on [Render](https://render.com/).
     *   Confirm the settings and click **"Create Web Service"**.
 
 Render will then build and deploy your application. The `start.sh` script handles starting the Streamlit app with the correct port and address settings for Render's environment.
+
+well host this either on streamlit or render 
 
 **sample input**
 SERVICE AGREEMENT
@@ -102,3 +107,4 @@ AlphaTech Solutions            BetaCorp Industries
 
 author
 Yash Jadhav 
+team : Yash Jadhav , Ayush Choudhary Thankyou 
