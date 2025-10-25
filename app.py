@@ -25,11 +25,11 @@ custom_css = """
         background-color: #000000;
     }
     h1, h2, h3 {
-        color: #0052FF; /* Brighter Electric Blue */
+        color: #DFFF00; /* Neon Yellow for headings */
         font-weight: 700; /* Bold */
     }
     h2 {
-        border-bottom: 2px solid #0052FF; /* Brighter Electric Blue separator */
+        border-bottom: 2px solid #DFFF00; /* Neon Yellow separator */
         padding-bottom: 10px;
         margin-top: 40px;
     }
@@ -49,7 +49,7 @@ custom_css = """
     .stTextArea textarea {
         background-color: #1a1a1a;
         color: #FFFFFF;
-        border: 2px solid #0052FF; /* Brighter Electric Blue */
+        border: 2px solid #DFFF00; /* Neon Yellow */
         border-radius: 15px;
     }
     mark {
@@ -59,7 +59,7 @@ custom_css = """
         border-radius: 0.3em;
     }
     .stSpinner > div > div {
-        border-top-color: #0052FF; /* Brighter Electric blue spinner */
+        border-top-color: #DFFF00; /* Neon Yellow spinner */
     }
 </style>
 """
