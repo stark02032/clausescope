@@ -23,8 +23,8 @@ To run ClauseScope on your local machine, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-github-repository-url>
-    cd <repository-name>
+    git clone https://github.com/stark02032/clausescope.git
+    cd clausescope
     ```
 
 2.  **Create and activate a virtual environment (recommended):**
@@ -40,7 +40,7 @@ To run ClauseScope on your local machine, follow these steps:
 
 4.  **Run the Streamlit application:**
     ```bash
-    streamlit run app.py
+    streamlit run app.py --server.port 8501 --server.address 0.0.0.0
     ```
 
 The application should now be open and accessible in your web browser at `http://localhost:8501`.
@@ -51,11 +51,21 @@ The application should now be open and accessible in your web browser at `http:/
 
 2.  **Highlight a Snippet:** Paste a smaller portion of the contract into the second text area and click the "Highlight Snippet" button to see a version of the text with key entities highlighted.
 
-## Deployment
+## Deployment on Render
 
-This application is ready to be deployed on [Streamlit Community Cloud](https://streamlit.io/cloud).
+This application is configured for deployment on [Render](https://render.com/).
 
-1.  Push your code to a public GitHub repository.
-2.  Sign up for Streamlit Community Cloud and connect your GitHub account.
-3.  Click "New app" and select the repository, branch, and the `app.py` file.
-4.  Click "Deploy!". Streamlit will automatically handle the installation of dependencies from `requirements.txt`.
+1.  **Ensure your code is pushed to GitHub:** Make sure all your changes are committed and pushed to your GitHub repository (e.g., `https://github.com/stark02032/clausescope.git`).
+
+2.  **Create a new Web Service on Render:**
+    *   Go to the [Render Dashboard](https://dashboard.render.com/).
+    *   Click **"New +"** and select **"Web Service"**.
+    *   Connect your GitHub account and select your `clausescope` repository.
+
+3.  **Configure and Deploy:**
+    *   Render will automatically detect your `render.yaml` file and pre-fill most of the settings.
+    *   Ensure the `startCommand` is set to `sh start.sh`.
+    *   Confirm the settings and click **"Create Web Service"**.
+
+Render will then build and deploy your application. The `start.sh` script handles starting the Streamlit app with the correct port and address settings for Render's environment.
+
