@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: clausescope
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "sh start.sh"
+    healthCheckPath: "/healthz"
