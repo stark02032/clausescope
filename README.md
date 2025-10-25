@@ -7,7 +7,7 @@ ClauseScope is a web application that uses Natural Language Processing (NLP) to 
 - **Clause Extraction:** Uses dependency parsing to identify and extract meaningful clauses from the contract.
 - **Date Extraction:** Accurately extracts dates in various formats using a specialized date parsing library.
 - **Snippet Highlighting:** Allows users to paste snippets of the contract to see key entities (like dates, organizations, etc.) highlighted.
-- **Customizable UI:** A modern and clean user interface.
+- **Customizable UI:** A modern and clean user interface. with electric neon black/blue and rounded corner 
 
 ## Tech Stack
 
